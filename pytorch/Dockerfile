@@ -10,7 +10,7 @@ RUN apt-get update \
 RUN pip3 install jupyter
 RUN pip3 install torch torchvision
 RUN pip3 install matplotlib
-
+RUN apt-get install -y git
 
 COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run_jupyter.sh /
