@@ -1,0 +1,8 @@
+version: '2.0'
+services: 
+  pytorch:
+    build: pytorch
+    ports: 
+     - "8880:8888"
+    volumes:
+     - .:/notebooks
